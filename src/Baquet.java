@@ -46,11 +46,7 @@ public class Baquet {
         partidos.add(partido);
         System.out.println("Partido agregado");
     }
-    public void verificarhorario(Partido partido1){
-        for (Partido partido : partidos){
 
-        }
-    }
 
     public void consultarDisponibilidad(int hora, String cancha, int fecha){
         for(Partido partido : partidos){
@@ -58,6 +54,7 @@ public class Baquet {
                 System.out.println("Lo siento  la cancha esta en uso en ese horario");
             }else{
                 System.out.println("La cancha esta disponible para el hoaraio que deseas");
+                System.out.println("las canchas en horarios ocupados son " + partido.getCanchas());
             }
 
         }
@@ -68,4 +65,6 @@ public class Baquet {
             System.out.println("Hora del partido: "+partido.getHora()+" | Fecha del partido: "+partido.getFecha()+"| Cancha utilizada: "+partido.getCanchas());
         }
     }
+
+
 }
