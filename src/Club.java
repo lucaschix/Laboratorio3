@@ -31,4 +31,11 @@ public class Club {
 		equipos.add(equipo);
 		System.out.println("equipo agregado");
 	}
+	public void mostrarPartidos(Futbol futbol, Baquet baquet, Equipo equipo){
+		for(Equipo equipo : equipos){
+			if(equipos!= null){
+				System.out.println("Partidos:"+baquet.getPartidos());
+			}
+		}
+	}
 }
