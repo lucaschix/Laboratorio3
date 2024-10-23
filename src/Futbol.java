@@ -3,12 +3,19 @@ import java.util.List;
 public class Futbol {
     private List<Deportista> deportistas;
     private List<Entrenador> entrenadores;
+    private List<Partido>partidos;
 
     public Futbol(List<Deportista> deportistas, List<Entrenador>entrenadores) {
         this.deportistas = deportistas;
         this.entrenadores= entrenadores;
     }
+    public List<Partido> getPartidos() {
+        return partidos;
+    }
 
+    public void setPartidos(List<Partido> partidos) {
+        this.partidos = partidos;
+    }
 
     public List<Deportista> getDeportistas() {
         return deportistas;

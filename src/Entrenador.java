@@ -3,6 +3,7 @@ public class Entrenador {
 	private String nombre;
 	private int edad;
 	private String dtdeporte;
+	private int añosExperiancia;
 
 	public String getNombre() {
 		return this.nombre;
@@ -39,5 +40,14 @@ public class Entrenador {
 	public void setDtdeporte(String dtdeporte) {
 		this.dtdeporte = dtdeporte;
 	}
+
+	public int getAñosExperiancia() {
+		return añosExperiancia;
+	}
+
+	public void setAñosExperiancia(int añosExperiancia) {
+		this.añosExperiancia = añosExperiancia;
+	}
+
 
 }

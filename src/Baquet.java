@@ -3,9 +3,6 @@ import java.util.List;
 public class Baquet {
     private List<Deportista> deportistas;
     private List<Entrenador> entrenadores;
-
-
-
     private List<Partido>partidos;
 
     public Baquet(List<Deportista> deportistas, List<Entrenador>entrenadores, List<Partido> partidos) {
@@ -45,12 +42,30 @@ public class Baquet {
         entrenadores.add(entrenador);
         System.out.println("Entrenador creado");
     }
-
-    public void verificarhorario(Partido partido){
+    public  void crearPartido(Partido partido){
+        partidos.add(partido);
+        System.out.println("Partido agregado");
+    }
+    public void verificarhorario(Partido partido1){
         for (Partido partido : partidos){
-            if(partido.getFecha()=){
 
+        }
+    }
+
+    public void consultarDisponibilidad(int hora, String cancha, int fecha){
+        for(Partido partido : partidos){
+            if(partido.getHora()== hora && partido.getFecha().equals(fecha) && partido.getCanchas().equals(cancha)){
+                System.out.println("Lo siento  la cancha esta en uso en ese horario");
+            }else{
+                System.out.println("La cancha esta disponible para el hoaraio que deseas");
             }
+
+        }
+    }
+
+    public void registrarUsos(){
+        for(Partido partido : partidos){
+            System.out.println("Hora del partido: "+partido.getHora()+" | Fecha del partido: "+partido.getFecha()+"| Cancha utilizada: "+partido.getCanchas());
         }
     }
 }

@@ -32,9 +32,12 @@ public class Club {
 		System.out.println("equipo agregado");
 	}
 	public void mostrarPartidos(Futbol futbol, Baquet baquet, Equipo equipo){
-		for(Equipo equipo : equipos){
+		for(Equipo equipo1 : equipos){
 			if(equipos!= null){
 				System.out.println("Partidos:"+baquet.getPartidos());
+				System.out.println("Partidos"+ futbol.getPartidos());
+			}else{
+				System.out.println("NO han habido partidos partidos");
 			}
 		}
 	}

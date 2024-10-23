@@ -4,6 +4,17 @@ public class Partido {
     private String fecha;
     private String equipos;
     private List<Cancha> canchas;
+    private int hora;
+
+    public int getHora() {
+        return hora;
+    }
+
+    public void setHora(int hora) {
+        this.hora = hora;
+    }
+
+    private int hora;
     public String getFecha() {
         return fecha;
     }
